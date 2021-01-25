@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 在新标签页打开淘宝 -->
+  <a href="http://www.taobao.com" target="_blank">淘宝下</a>
+
+  <!-- 
+    需求：点击a链接，百度网页在iframe中打开
+    如何实现：把a链接的target属性的值换成iframe的name的值
+   -->
+  <a href="http://www.baidu.com" target="box">百度下</a>
+
+  <br>
+  <iframe name="box" width="800" height="600" src="http://www.taobao.com"></iframe>
+
+</body>
+
+</html>
