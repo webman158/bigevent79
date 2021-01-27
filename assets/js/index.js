@@ -1,5 +1,6 @@
 // ====================== 发送ajax请求来获取到用户的信息 ======================
 
+// getUserInfo 需要是全局的，才会是window上的方法
 function getUserInfo() {
   axios
     .get("/my/userinfo", {
@@ -8,7 +9,7 @@ function getUserInfo() {
       }, */
     })
     .then((res) => {
-      console.log(res);
+      // console.log(res);
 
       // 判断
       if (res.data.status !== 0) {
